@@ -1,4 +1,4 @@
-# Difficult math in Aiken
+# Non-trivial math in Aiken
 
 ## A bit of context
 
@@ -121,6 +121,8 @@ $$83^\frac{1}{4} \sim 4$$
 
 $$y = b * \log_2(x)$$
 
+* Aiken's `log` is available, but `pow` is faster
+
 * Solving for $x$:
 
 $$x = 2^\frac{y}{b}$$
@@ -162,9 +164,10 @@ $$x = 2^\frac{y}{b}$$
 
 ## Conclusion
 
-* 
+* Using all this we could make it work within mem/CPU limits for realistic cases
 
-* Whenever possible, don't compute, just check
+* We had to provide ten helper values through the redeemer
 
-* 
+* The approach can be useful in other applications
 
+* The `is_*` functions can be contributed to Aiken's stdlib
